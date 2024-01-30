@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/MenuSelector/Levels/Scenes/MenuGameSelector.unity
+    guid: f9ac1a8240334ca44b30fff2cad2fc2d
+  - enabled: 1
+    path: Assets/AdventureText/Levels/Scenes/MainMenuAdventureText.unity
+    guid: d3f3da9444827f348ad4caf634d5761c
+  - enabled: 1
+    path: Assets/AdventureText/Levels/Scenes/GameAdventureText.unity
+    guid: 1796d6ff8d2d92647910efda90c8bc83
+  - enabled: 1
+    path: Assets/AirHockey/Levels/Scenes/MainMenuAirHockey.unity
+    guid: 4ee05b649c50aba4fb523171753b925a
+  - enabled: 1
+    path: Assets/AirHockey/Levels/Scenes/GameAirHockey.unity
+    guid: 01766004191db7d4e97d040aa9cd1830
+  - enabled: 1
+    path: Assets/1942/Levels/Scenes/MainMenu1942.unity
+    guid: 902b53a4959644640b217ce61c831471
+  - enabled: 1
+    path: Assets/1942/Levels/Scenes/Game1942.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/SuikaGame/Levels/Scenes/GameSuika.unity
+    guid: 4090bee13b84fc74384913777000f25a
+  - enabled: 1
+    path: Assets/Pacman/Scenes/GamePacman.unity
+    guid: d8e95df530892c84388594d604e30501
+  - enabled: 1
+    path: Assets/Tetris/Scenes/GameTetris.unity
+    guid: 24e4d7b852503494ba0b21e4045b5f84
+  m_configObjects: {}

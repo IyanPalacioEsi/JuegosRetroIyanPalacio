@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 240c4fd14f21fb446a3c7c22a3e22faa, type: 3}
+  m_Name: A
+  m_EditorClassIdentifier: 
+  storyText: "Hola me gustaria que me acompa\xF1aras en mi viaje.\n\n1-Aceptar\n2-Negar\n3-Robar"
+  nextStates:
+  - {fileID: 11400000, guid: 9d9ab5896d186ff47a124000b912f8e8, type: 2}
+  - {fileID: 11400000, guid: 550de44bada534343bb2456b4cda0712, type: 2}
+  - {fileID: 11400000, guid: d83d184f4f49aee41940d3b145f54f22, type: 2}
