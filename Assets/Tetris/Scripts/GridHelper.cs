@@ -47,6 +47,8 @@ public class GridHelper : MonoBehaviour
     //Método al que le pasamos una fila y si hemos comprobado que está completa, la elimina
     public static void DeleteRow(int y)
     {
+        //Sumo una linea
+        //Sumo mil puntos
         //Para poder borrar la fila, vemos cada una de las columnas de la fila actual
         for (int x = 0; x < w; x++)
         {
