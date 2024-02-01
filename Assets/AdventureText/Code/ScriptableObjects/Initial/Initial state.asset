@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 240c4fd14f21fb446a3c7c22a3e22faa, type: 3}
   m_Name: Initial state
   m_EditorClassIdentifier: 
-  storyText: 'Seleciona 1, 2 o 3 para elegir entre estados.
-
-'
+  storyText: "Hola me gustaria que me acompa\xF1aras en mi viaje.\n\n1-Aceptar\n2-Negar\n3-Robar"
   nextStates:
   - {fileID: 11400000, guid: 3956a913242c20b47b797ea7ad0bd26c, type: 2}
