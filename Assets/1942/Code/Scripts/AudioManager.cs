@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement; //Para cambiar entre escenas
 
-public class AudioManager1942 : MonoBehaviour
+public class AudioManager : MonoBehaviour
 {
     //Array para los sonidos y para las músicas
     public AudioSource[] sfx, music;
 
     //Hacemos esta clase(este script) Singleton para poder sacar su información desde muchos objetos
     //Static es que solo hay uno de este tipo en todo el juego
-    public static AudioManager1942 amInstance;//Es el mismo tipo que el script
+    public static AudioManager amInstance;//Es el mismo tipo que el script
     //El singleton es más apropiado usarlo, cuando vamos a hacer muchísimas referencias desde distintos objetos
     private void Awake()
     {

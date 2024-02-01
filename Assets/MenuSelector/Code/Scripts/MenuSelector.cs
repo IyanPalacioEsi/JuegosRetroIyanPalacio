@@ -17,7 +17,7 @@ public class MenuSelector : MonoBehaviour
 
     public void TopGun()
     {
-        SceneManager.LoadScene("MainMenu1942");
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void GameSuika()

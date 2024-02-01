@@ -21,10 +21,10 @@ EditorBuildSettings:
     path: Assets/AirHockey/Levels/Scenes/GameAirHockey.unity
     guid: 01766004191db7d4e97d040aa9cd1830
   - enabled: 1
-    path: Assets/1942/Levels/Scenes/MainMenu1942.unity
+    path: Assets/1942/Levels/Scenes/MainMenu.unity
     guid: 902b53a4959644640b217ce61c831471
   - enabled: 1
-    path: Assets/1942/Levels/Scenes/Game1942.unity
+    path: Assets/1942/Levels/Scenes/Game.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/SuikaGame/Levels/Scenes/GameSuika.unity

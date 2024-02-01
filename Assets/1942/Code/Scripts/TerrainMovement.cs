@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TerrainMovement : MonoBehaviour
 {
+    //Velocidad a la que bajan los fondos
     public float yVelocity;
 
     // Update is called once per frame

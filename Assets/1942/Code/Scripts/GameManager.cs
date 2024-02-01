@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement; //Librería para cambiar entre escenas
 
-public class GameManager1942 : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     //Referencia al jugador y al spawner de enemigos
     public GameObject player, enemySpawner;    
@@ -34,7 +34,7 @@ public class GameManager1942 : MonoBehaviour
         //Carga la misma escena en la que estamos
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         //Sonido de GameOver
-        AudioManager1942.amInstance.PlaySFX(5);
+        AudioManager.amInstance.PlaySFX(5);
     }
 
     //Jugar otra nueva vida

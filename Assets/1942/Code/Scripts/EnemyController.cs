@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController1942 : MonoBehaviour
+public class EnemyController : MonoBehaviour
 {
     //Referencia al Rigidbody de la nave enemiga
     public Rigidbody2D rb;
@@ -40,7 +40,7 @@ public class EnemyController1942 : MonoBehaviour
             //Destruimos la bala
             Destroy(collision.gameObject);
             //Sonido de cuando muere una nave enemiga
-            AudioManager1942.amInstance.PlaySFX(8);
+            AudioManager.amInstance.PlaySFX(8);
             //Destruimos la nave
             Destroy(gameObject);
         }
@@ -52,6 +52,6 @@ public class EnemyController1942 : MonoBehaviour
         //Creamos una bala, en la posición frente a la nave, con la rotación de la bala
         Instantiate(enemyBullet, new Vector2(transform.position.x, transform.position.y - .1f), enemyBullet.transform.rotation);
         //Sonido al disparar una bala
-        AudioManager1942.amInstance.PlaySFX(0);
+        AudioManager.amInstance.PlaySFX(0);
     }
 }

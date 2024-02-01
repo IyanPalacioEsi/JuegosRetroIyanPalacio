@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; //Librería para poder usar elementos de la UI
 
-public class UIController1942 : MonoBehaviour
+public class UIController : MonoBehaviour
 {
     //Referenciamos las imágenes de las vidas
     public Image life1, life2, life3;
