@@ -9,8 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 240c4fd14f21fb446a3c7c22a3e22faa, type: 3}
+  m_Script: {fileID: 11500000, guid: 7e05d9dda2f1e104e88f2901d4b8878b, type: 3}
   m_Name: B
   m_EditorClassIdentifier: 
-  storyText: 
-  nextStates: []
+  storyText: "Vamos a una aventura. Pero antes una prueba.\nEste bast\xF3n lo he
+    encontrado antes, y s\xE9 que era tuyo.\nPero ya no recuerdo de que material
+    era.\n\n1 - Oro.\n2 - Plata.\n3 - Madera."
+  nextStates:
+  - {fileID: 11400000, guid: 4d0dba5615a7a784d82b1f1525008459, type: 2}
+  - {fileID: 11400000, guid: 4d0dba5615a7a784d82b1f1525008459, type: 2}
+  - {fileID: 11400000, guid: 842b0bc95ff3c6d4081d820f81e3c613, type: 2}

@@ -9,11 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 240c4fd14f21fb446a3c7c22a3e22faa, type: 3}
+  m_Script: {fileID: 11500000, guid: 7e05d9dda2f1e104e88f2901d4b8878b, type: 3}
   m_Name: A
   m_EditorClassIdentifier: 
-  storyText: "Hola me gustaria que me acompa\xF1aras en mi viaje.\n\n1-Aceptar\n2-Negar\n3-Robar"
+  storyText: "Hola me gustar\xEDa que me acompa\xF1ases en una aventura.\n\n1 - Aceptar.\n2
+    - Negar.\n3 - Robar."
   nextStates:
-  - {fileID: 11400000, guid: 9d9ab5896d186ff47a124000b912f8e8, type: 2}
-  - {fileID: 11400000, guid: 550de44bada534343bb2456b4cda0712, type: 2}
-  - {fileID: 11400000, guid: d83d184f4f49aee41940d3b145f54f22, type: 2}
+  - {fileID: 11400000, guid: f874c96449f7c0245a8c3761a934433d, type: 2}
+  - {fileID: 11400000, guid: 6a214f86d356eba46aa9f07b2fd5f776, type: 2}
+  - {fileID: 11400000, guid: 6ae1c1b9be2ed9d428876c68e30ac80e, type: 2}

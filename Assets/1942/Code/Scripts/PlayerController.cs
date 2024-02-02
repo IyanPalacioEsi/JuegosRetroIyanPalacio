@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     //Referencia a la UI
     public UIController uiReference;
     //Referencia al GameManager
-    public GameManager gmReference;
+    public GameManager1942 gmReference;
 
     //Variable para conocer el máximo punto hacia la izquierda
     float leftConstraint;

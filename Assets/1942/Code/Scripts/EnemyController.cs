@@ -43,7 +43,9 @@ public class EnemyController : MonoBehaviour
             AudioManager.amInstance.PlaySFX(8);
             //Destruimos la nave
             Destroy(gameObject);
+            ScoreTopGun.tpInstance.ScorePoints();
         }
+        
     }
 
     //Método para disparar balas

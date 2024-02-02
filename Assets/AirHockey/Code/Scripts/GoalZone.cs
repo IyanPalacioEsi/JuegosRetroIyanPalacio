@@ -1,46 +1,56 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro; //Libreria para acceder textmeshpro
+using TMPro; //Librería para poder acceder a los TextMeshPro
 
 public class GoalZone : MonoBehaviour
 {
-    //REferencia acceder marcador de ppuntos
+    //Referencia para acceder al marcador de puntos
     public TextMeshProUGUI scoreText;
-    //Variable guardar puntos guardados porteria
-    int score;
+    //Variable para guardar los puntos marcados en esa portería
+    public int score;
 
+    //Referencia al GameManager
     public GameManagerAirHockey gMReference;
 
-    //Antes de que empieze el juego
+    //Antes de que empiece el juego
     private void Awake()
     {
-        //Ponemos puntuacion en cero
+        //Ponemos la puntuación en 0
         score = 0;
-        //cambiamos el texto de la puntuacion al valor que tenga en ese momento el score
+        //Cambiamos el texto de la puntuación al valor que tenga en ese momento el score
         scoreText.text = score.ToString();
 
-        //Para transformar int en string hay 3 formas
-        //score.Text.text = score + "";
-        //scoreText.text = score.ToString();
-        //scoreText.text = "Score" + score;
+        //Para transformar un int en un string hay 3 maneras
+        //scoreText.text = score + ""; le sumo un string vacío a ese int, luego ya será todo un string
+        //scoreText.text = score.ToString(); transformo(cast) del int en un string
+        //scoreText.text = "Score: " + score; a un string le ponemos después un int, con lo cuál ya todo es string
     }
 
-    //Metodo para detectar cuando algo entra en un trigger(GoalZone)
+    //Método para detectar cuando algo ha entrado en el trigger(zona de gol)
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Solo aquellos gameobject nombrado disco que entra en trigger
-        if (collision.CompareTag("Disco")) 
+        //Solo aquellos GameObjects etiquetados como Disco, que hayan entrado en el trigger
+        if (collision.CompareTag("Disco"))
         {
-            //Sumo 1 a la puntuacion
+            //Sumo 1 a la puntuación
             score++;
-            //cambiamos el texto de la puntuacion al valor que tenga en ese momento el score
-            scoreText.text = score.ToString();
-            gMReference.GoalScored();
+            //Si la puntuación es mayor de 9
+            if (score > 9)
+            {
+                //Ejecuto el método que hace que se pase a otra ronda
+                gMReference.GoalScored();
+                //Ejecuto el método que termina esta partida
+                gMReference.WinGame();
+            }
+            //Si no
+            else
+            {
+                //Cambiamos el texto de la puntuación al valor que tenga en ese momento el score
+                scoreText.text = score.ToString();
+                //Ejecuto el método que hace que se pase a otra ronda
+                gMReference.GoalScored();
+            }
         }
-        
-
     }
-
-
 }

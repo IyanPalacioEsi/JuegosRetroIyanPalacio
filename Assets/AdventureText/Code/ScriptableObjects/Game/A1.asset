@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 240c4fd14f21fb446a3c7c22a3e22faa, type: 3}
+  m_Script: {fileID: 11500000, guid: 7e05d9dda2f1e104e88f2901d4b8878b, type: 3}
   m_Name: A1
   m_EditorClassIdentifier: 
-  storyText: "Aceptas su invitaci\xF3n."
-  nextStates: []
+  storyText: Gracias, partiremos al amanecer
+  nextStates:
+  - {fileID: 11400000, guid: a2558ea5a6815fe40a4dad8a965c947e, type: 2}

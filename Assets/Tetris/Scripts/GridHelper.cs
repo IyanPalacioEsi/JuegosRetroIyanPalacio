@@ -20,6 +20,8 @@ public class GridHelper : MonoBehaviour
     //Creamos el array doble rejilla, de altura y anchura dada
     public static Transform[,] grid = new Transform[w, h]; //La [,] indica dos dimensiones
 
+    public static PuntosTetris pTReference;
+
     //Método que dado un Vector2 cogerá ese Vector, y redondeará sus coordenadas de X e Y. Tras esto el método nos devuelve el vector redondeado
     public static Vector2 RoundVector(Vector2 v)
     {
@@ -58,6 +60,7 @@ public class GridHelper : MonoBehaviour
             //Cambiaríamos las X del dibujo de arriba por una posición vacía (null)
             grid[x, y] = null;
         }
+        PuntosTetris.ptInstance.ScorePoints();
     }
 
     //Método que baja una fila a partir de una fila concreta

@@ -10,6 +10,8 @@ public class MergeSystem : MonoBehaviour
 
     GameManagerSuika gMReference;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +32,7 @@ public class MergeSystem : MonoBehaviour
             collision.gameObject.SetActive(false);
             gameObject.SetActive(false);
             Instantiate(gMReference.slimes[(int)++slimeType], transform.position, transform.rotation);
+            SlimeScore.ssInstance.ScorePoints();
         }
     }
 }

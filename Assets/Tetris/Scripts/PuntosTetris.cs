@@ -1,20 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PuntosTetris : MonoBehaviour
 {
-    private int puntos = 0;
+    private int score;
 
-    // Start is called before the first frame update
-    void Start()
+    public TextMeshProUGUI contador;
+
+    public static PuntosTetris ptInstance;
+    private void Awake()
     {
-        
+        score = 0;
+
+        contador.text = score.ToString();
+
+        if (ptInstance == null)
+            //La rrellenamos con todo el contenido de este script
+            ptInstance = this;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ScorePoints() 
     {
-        
+        score = 100 + score;
+
+        contador.text = score.ToString();
+
+
+
     }
 }
